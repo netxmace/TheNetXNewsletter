@@ -2,8 +2,86 @@ body{
     margin:0; 
 }
 
+
+@font-face {
+    font-family: 'roboto-slab-font';
+    src: url('./assets/Roboto-Black.ttf');
+    font-style:normal;
+    font-weight:bolder;
+    }
+
+
+    @font-face {
+        font-family: 'roboto-condensed-font';
+        src: url('./assets/Roboto-BoldItalic.ttf');
+        font-style:italic;
+        font-weight: normal;
+        }
+    
+    
+
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
+}
+
+.big-content{
+    width:70%;
+    max-width:55%;
+}
+
+.grid-template{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.small-boxes{
+    display:flex;
+}
+
+.small-boxes>*{
+    content: '';
+    flex-grow: 1;
+    gap:1rem;
+}
+
+.title{
+    margin: auto;
+    color: orange;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: 'roboto-slab-font';
+}
+
+/* .hr-line{
+    border: solid orange;
+    width: 20%;
+} */
+
+.font1{
+    font-family: 'roboto-condensed-font';
+}
+
+.blue-box{
+   display: grid;
+   grid-template-columns: 73% 23%;
+
+
+}
+
+.blue-box div:nth-child(4){
+    background-color: blue;
+    
+}
+
+.line{
+    border-top: 3px solid orange;
+    width: 25%;
+    position: relative;
+    content: ' ';
+
+
 }
