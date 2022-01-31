@@ -148,10 +148,7 @@ img{
 
 
 @media screen and (min-width:550px){
-    body{
-        background-color: lightgreen;
-    }
-
+ 
     .box{
         align-self: end;
 
@@ -170,7 +167,7 @@ img{
 
     p.width-set{
         max-width:400px;
-        margin: auto;
+        margin: 0 auto;
     }
 
  
@@ -206,7 +203,7 @@ img{
 
     .grid-template{
         margin-top: 10px;
-        grid-auto-rows: minmax(150px,auto);
+        grid-auto-rows: minmax(250px,auto);
     }
 
     .box{
