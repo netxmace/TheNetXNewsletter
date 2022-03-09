@@ -107,7 +107,7 @@ img{
 }
 
 .content{
-    background-color: #eb863e;
+    background-color: #FF751F;
     font-size:1.1em;
     text-align: center;
     padding: 2rem 1.7rem ; 
@@ -187,6 +187,12 @@ img{
 }
 
 @media screen and (min-width:850px){
+    .wrapper{
+        width:80%;
+        margin:0 auto;
+
+    }
+
     .box-top{
         display:none;
     }
