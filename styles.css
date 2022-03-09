@@ -162,6 +162,7 @@ img{
     .content{
         padding: 2rem 2rem 2rem  2rem;
         font-size:1.2rem;
+        min-height: 100px;
        
     }
 
@@ -209,8 +210,13 @@ img{
 
     .grid-template{
         margin-top: 10px;
+
+        
+
         grid-auto-rows: minmax(250px,auto);
+
     }
+  
 
     .box{
         height:50.5px;
