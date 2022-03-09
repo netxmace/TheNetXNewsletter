@@ -13,8 +13,16 @@
     font-weight: normal;
 }
     
+a{
+    text-decoration:none;
+    color:black;
+    font-family: 'roboto-condensed-font';
+    font-weight:100;
+}
     
-    
+a:hover,a:focus{
+    color:#025d81;
+}
 *{
     box-sizing: border-box;
     margin:0;
@@ -27,6 +35,10 @@ img{
     padding:0 8px;
 }
     
+.divider{
+    margin-bottom: 2rem;
+    border:0.5px solid #000;
+}
     /* End of Formatting */
     
     /* Start of Central Title */
@@ -82,7 +94,7 @@ img{
     margin:0 auto;
     width:80%;
     font-size: 17px;
-    text-align:center;
+    /* text-align:center; */
     justify-content: center;
 }
 
@@ -114,6 +126,15 @@ img{
     justify-content: center;
 }
 
+.center{
+    text-align:center;
+    padding-bottom:2rem;
+    text-decoration: underline;
+}
+
+.center:hover,.center:focus{
+    transform:scale(1.05);
+}
 .grid-template div:nth-child(even){
     padding:0;
 }
