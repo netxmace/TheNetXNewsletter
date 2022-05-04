@@ -24,15 +24,7 @@ a{
     
 a:hover,a:focus{
     color:#025d81;
-<<<<<<< HEAD
-    font-size: 1.1rem;
-    font-family: 'roboto-condensed-font';
-    font-weight:100;
-    transition: all .3s ease-in-out;
-
-=======
     font-size:1.2rem ;
->>>>>>> 8cac4a1d7d879348ae10e2a710b2936268dca8b1
 }
 
 *{
