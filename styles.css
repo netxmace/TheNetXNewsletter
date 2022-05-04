@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'roboto-slab-font';
+    src: url('./assets/Roboto-Black.ttf');
+    font-style:normal;
+    font-weight:bolder;
+    }
+
+
+@font-face {
+    font-family: 'roboto-condensed-font';
+    src: url('./assets/Roboto-BoldItalic.ttf');
+    font-style:italic;
+    font-weight: normal;
+}
+    
+a{
+    text-decoration:none;
+    color:rgb(12, 12, 12);
+    font-size: 1.1rem;
+    font-family: 'roboto-condensed-font';
+    font-weight:100;
+    transition: all .3s ease-in-out;
+}
+    
+a:hover,a:focus{
+    color:#025d81;
+    font-size: 1.1rem;
+    font-family: 'roboto-condensed-font';
+    font-weight:100;
+    transition: all .3s ease-in-out;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+    
+img{
+    width:100%;
+    height:auto;
+    padding:0 8px;
+}
+    
+.divider{
+    margin-bottom: 2rem;
+    border:0.5px solid #000;
+}
+    /* End of Formatting */
+    
+    /* Start of Central Title */
+
+.title{
+    margin: 1rem auto 0 auto;
+    color: #fd6a02;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: 'roboto-slab-font';
+}
+
+    /* End of Central Title */
+
+    /* Start of Version label */
+
+.blue-box{
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;      /*Change  fr numbers to change width of blue bar */ 
+    margin-left:8px ;
+    margin-right:8px ;
+}
+
+.line{
+    border-top: 3px solid #fd6a02;
+    width: 30%;
+    position: relative;
+    content: ' ';
+}
+
+.box-top{
+    background-color: #025d81;
+}
+
+.font1{
+    font-family: 'roboto-condensed-font';
+    margin-top: 0.7em;
+    width: 70%;
+}
+
+.blue-box div:nth-child(2){
+    grid-row: 1/3;
+    grid-column:2/2;
+}
+     
+    /* End of Version Label */
+
+    /* Start of big Content */
+
+.main-body{
+    margin:0 auto;
+    width:80%;
+    font-size: 17px;
+    /* text-align:center; */
+    justify-content: center;
+}
+
+    /* End of Big Content */
+
+    /* Start of Grid  */
+
+.grid-template{
+    margin-top:2.5rem;
+    margin-left:3px ;
+    margin-right:3px ;
+    display:grid;
+    grid-template-columns: 9.7fr 0.3fr;
+    grid-auto-rows: minmax(1vh,auto);
+    grid-column-gap: 0.4em;
+    grid-row-gap:0.4em;
+}
+
+.box{
+    background-color: #025d81;
+    height:1.7rem;
+}
+
+.content{
+    background-color: #FF8133;
+    font-size:1.1em;
+    text-align: center;
+    padding: 2rem 1.7rem ; 
+    justify-content: center;
+}
+
+.center{
+    text-align:center;
+    padding-bottom:2rem;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.center:hover,.center:focus{
+    transform:scale(1.05);
+}
+.grid-template div:nth-child(even){
+    padding:0;
+}
+
+        /* End of Grid */
+
+        /* Start of Footer */
+
+.small-boxes{
+    display:flex;
+    gap:0.2em;
+}
+
+.box1{
+    margin-top: 3rem;
+    height:2rem;
+    background-color: #025d81;
+    position:relative;
+    content: '';
+    flex-grow: 6;
+    gap:1rem;
+}
+
+.box-2{
+    height:2rem;
+    margin-top:3rem;
+    background-color: #025d81;
+    flex-grow:1;
+}
+
+    /* End of Footer */
+
+
+@media screen and (min-width:550px){
+ 
+    .box{
+        align-self: end;
+
+    }
+
+    .grid-template{
+        grid-template-rows: 40px ;
+        grid-auto-rows: minmax(200px,auto);
+    }
+
+    .content{
+        padding: 2rem 2rem 2rem  2rem;
+        font-size:1.2rem;
+        min-height: 100px;
+       
+    }
+
+    p.width-set{
+        max-width:400px;
+        margin: 0 auto;
+    }
+
+ 
+}
+
+@media screen and (min-width:752px){
+    
+   .flex-wrapper{
+       width:70%;
+       margin:0 auto;
+   }
+
+   .grid-template{
+       width:70%;
+       margin: 2rem auto;
+   }
+}
+
+@media screen and (min-width:850px){
+    .wrapper{
+        width:80%;
+        margin:0 auto;
+
+    }
+
+    .box-top{
+        display:none;
+    }
+
+    .blue-box{
+        display:block;
+    }
+    .container{
+        display:flex;
+        gap: 1.8rem;
+        margin-left:1rem;
+        
+    }
+
+    .grid-template{
+        margin-top: 10px;
+
+        
+
+        grid-auto-rows: minmax(250px,auto);
+
+    }
+  
+
+    .box{
+        height:50.5px;
+    }
+}
