@@ -12,13 +12,23 @@
     font-style:italic;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: 'satoshi';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+         url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
     
 a{
     text-decoration:none;
     color:rgb(12, 12, 12);
     font-size: 1.1rem;
-    font-family: 'roboto-condensed-font';
-    font-weight:100;
+    font-family: 'satoshi';
+    font-weight: 900;
     transition: all .3s ease-in-out;
 }
     
