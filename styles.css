@@ -28,6 +28,7 @@ a{
     color:rgb(12, 12, 12);
     font-size: 1.1rem;
     font-family: 'satoshi';
+    font-style: italic;
     font-weight: 900;
     transition: all .3s ease-in-out;
 }
