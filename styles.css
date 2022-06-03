@@ -25,13 +25,13 @@
     
 a{
     text-decoration:none;
-    color:rgb(12, 12, 12);
+    color:rgb(4, 17, 87);
     font-size: 1.1rem;
     font-family: 'satoshi';
     font-style: italic;
     font-weight: 900;
     transition: all .3s ease-in-out;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 }
     
 a:hover,a:focus{
