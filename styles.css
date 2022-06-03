@@ -29,7 +29,7 @@ a{
     font-size: 1.1rem;
     font-family: 'satoshi';
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
     transition: all .3s ease-in-out;
     transition-delay: 0.2s;
 }
