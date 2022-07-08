@@ -30,8 +30,8 @@ a{
     font-family: 'satoshi';
     font-style: italic;
     font-weight: 600;
-    transition: all .3s ease-in-out;
-    transition-delay: 0.2s;
+    transition: all 300ms ease-in-out;
+    /* transition-delay: 0.2s; */
 }
     
 a:hover,a:focus{
@@ -119,12 +119,12 @@ img{
     /* Start of Grid  */
 
 .grid-template{
-    margin-top:2.5rem;
+    /* margin-top:2.5rem;
     margin-left:3px ;
-    margin-right:3px ;
+    margin-right:3px ; */
     display:grid;
     grid-template-columns: 9.7fr 0.3fr;
-    grid-auto-rows: minmax(1vh,auto);
+    /* grid-auto-rows: minmax(1vh,auto); */
     grid-column-gap: 0.4em;
     grid-row-gap:0.4em;
 }
