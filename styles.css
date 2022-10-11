@@ -1,262 +1,248 @@
 @font-face {
-    font-family: 'roboto-slab-font';
-    src: url('./assets/Roboto-Black.ttf');
-    font-style:normal;
-    font-weight:bolder;
-    }
-
-
-@font-face {
-    font-family: 'roboto-condensed-font';
-    src: url('./assets/Roboto-BoldItalic.ttf');
-    font-style:italic;
-    font-weight: normal;
+  font-family: "roboto-slab-font";
+  src: url("./assets/Roboto-Black.ttf");
+  font-style: normal;
+  font-weight: bolder;
 }
 
 @font-face {
-    font-family: 'satoshi';
-    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
-         url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
-         url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: italic;
-  }
-    
-a{
-    text-decoration:none;
-    color:rgb(10, 27, 124);
-    font-size: 1.1rem;
-    font-family: 'satoshi';
-    font-style: italic;
-    font-weight: 600;
-    transition: all 300ms ease-in-out;
-    /* transition-delay: 0.2s; */
-}
-    
-a:hover,a:focus{
-    color:#025d81;
-    font-size:1.2rem ;
+  font-family: "roboto-condensed-font";
+  src: url("./assets/Roboto-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: normal;
 }
 
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
-    
-img{
-    width:100%;
-    height:auto;
-    padding:0 8px;
-}
-    
-.divider{
-    margin-bottom: 2rem;
-    border:0.5px solid #000;
-}
-    /* End of Formatting */
-    
-    /* Start of Central Title */
-
-.title{
-    margin: 1rem auto 0 auto;
-    color: #fd6a02;
-    text-align: center;
-    text-decoration: solid;
-    font-weight: 900;
-    font-size: xx-large;
-    font-family: 'roboto-slab-font';
+@font-face {
+  font-family: "satoshi";
+  src: url("assets/Satoshi-Variable.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 
-    /* End of Central Title */
-
-    /* Start of Version label */
-
-.blue-box{
-    display: grid;
-    grid-template-columns: 1fr 0.6fr;      /*Change  fr numbers to change width of blue bar */ 
-    margin-left:8px ;
-    margin-right:8px ;
+a {
+  text-decoration: none;
+  color: rgb(10, 27, 124);
+  font-size: 1.07rem;
+  font-family: "satoshi";
+  font-style: italic;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  /* transition-delay: 0.2s; */
 }
 
-.line{
-    border-top: 3px solid #fd6a02;
-    width: 30%;
-    position: relative;
-    content: ' ';
+a:hover,
+a:focus {
+  color: #025d81;
+  font-size: 1.2rem;
 }
 
-.box-top{
-    background-color: #025d81;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.font1{
-    font-family: 'roboto-condensed-font';
-    margin-top: 0.7em;
-    width: 70%;
+img {
+  width: 100%;
+  height: auto;
+  padding: 0 8px;
 }
 
-.blue-box div:nth-child(2){
-    grid-row: 1/3;
-    grid-column:2/2;
+.divider {
+  margin-bottom: 2rem;
+  border: 0.5px solid #000;
 }
-     
-    /* End of Version Label */
+/* End of Formatting */
 
-    /* Start of big Content */
+/* Start of Central Title */
 
-.main-body{
-    margin:0 auto;
-    width:80%;
-    font-size: 17px;
-    /* text-align:center; */
-    justify-content: center;
+.title {
+  margin: 1rem auto 0 auto;
+  color: #fd6a02;
+  text-align: center;
+  text-decoration: solid;
+  font-weight: 900;
+  font-size: xx-large;
+  font-family: "roboto-slab-font";
 }
 
-    /* End of Big Content */
+/* End of Central Title */
 
-    /* Start of Grid  */
+/* Start of Version label */
 
-.grid-template{
-    /* margin-top:2.5rem;
+.blue-box {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr; /*Change  fr numbers to change width of blue bar */
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.line {
+  border-top: 3px solid #fd6a02;
+  width: 30%;
+  position: relative;
+  content: " ";
+}
+
+.box-top {
+  background-color: #025d81;
+}
+
+.font1 {
+  font-family: "roboto-condensed-font";
+  margin-top: 0.7em;
+  width: 70%;
+  font-weight: 500;
+}
+
+.blue-box div:nth-child(2) {
+  grid-row: 1/3;
+  grid-column: 2/2;
+}
+
+/* End of Version Label */
+
+/* Start of big Content */
+
+.main-body {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 17px;
+  /* text-align:center; */
+  justify-content: center;
+}
+
+/* End of Big Content */
+
+/* Start of Grid  */
+
+.grid-template {
+  /* margin-top:2.5rem;
     margin-left:3px ;
     margin-right:3px ; */
-    display:grid;
-    grid-template-columns: 9.7fr 0.3fr;
-    /* grid-auto-rows: minmax(1vh,auto); */
-    grid-column-gap: 0.4em;
-    grid-row-gap:0.4em;
+  display: grid;
+  grid-template-columns: 9.7fr 0.3fr;
+  /* grid-auto-rows: minmax(1vh,auto); */
+  grid-column-gap: 0.4em;
+  grid-row-gap: 0.4em;
 }
 
-.box{
-    background-color: #025d81;
-    height:1.7rem;
+.box {
+  background-color: #025d81;
+  height: 1.7rem;
 }
 
-.content{
-    background-color: #FF8133;
-    font-size:1.1em;
-    text-align: center;
-    padding: 2rem 1.7rem ; 
-    justify-content: center;
+.content {
+  background-color: #ff8133;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 2rem 1.7rem;
+  justify-content: center;
 }
 
-.center{
-    text-align:center;
-    padding-bottom:2rem;
-    text-decoration: underline;
-    transition: all 0.3s ease-in-out;
+.center {
+  text-align: center;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
 }
 
-.center:hover,.center:focus{
-    transform:scale(1.05);
+.center:hover,
+.center:focus {
+  transform: scale(1.05);
 }
-.grid-template div:nth-child(even){
-    padding:0;
-}
-
-        /* End of Grid */
-
-        /* Start of Footer */
-
-.small-boxes{
-    display:flex;
-    gap:0.2em;
+.grid-template div:nth-child(even) {
+  padding: 0;
 }
 
-.box1{
-    margin-top: 3rem;
-    height:2rem;
-    background-color: #025d81;
-    position:relative;
-    content: '';
-    flex-grow: 6;
-    gap:1rem;
+/* End of Grid */
+
+/* Start of Footer */
+
+.small-boxes {
+  display: flex;
+  gap: 0.2em;
 }
 
-.box-2{
-    height:2rem;
-    margin-top:3rem;
-    background-color: #025d81;
-    flex-grow:1;
+.box1 {
+  margin-top: 3rem;
+  height: 2rem;
+  background-color: #025d81;
+  position: relative;
+  content: "";
+  flex-grow: 6;
+  gap: 1rem;
 }
 
-    /* End of Footer */
-
-
-@media screen and (min-width:550px){
- 
-    .box{
-        align-self: end;
-
-    }
-
-    .grid-template{
-        grid-template-rows: 40px ;
-        grid-auto-rows: minmax(200px,auto);
-    }
-
-    .content{
-        padding: 2rem 2rem 2rem  2rem;
-        font-size:1.2rem;
-        min-height: 100px;
-       
-    }
-
-    p.width-set{
-        max-width:400px;
-        margin: 0 auto;
-    }
-
- 
+.box-2 {
+  height: 2rem;
+  margin-top: 3rem;
+  background-color: #025d81;
+  flex-grow: 1;
 }
 
-@media screen and (min-width:752px){
-    
-   .flex-wrapper{
-       width:70%;
-       margin:0 auto;
-   }
+/* End of Footer */
 
-   .grid-template{
-       width:70%;
-       margin: 2rem auto;
-   }
+@media screen and (min-width: 550px) {
+  .box {
+    align-self: end;
+  }
+
+  .grid-template {
+    grid-template-rows: 40px;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .content {
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+    min-height: 100px;
+  }
+
+  p.width-set {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width:850px){
-    .wrapper{
-        width:80%;
-        margin:0 auto;
+@media screen and (min-width: 752px) {
+  .flex-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-    }
+  .grid-template {
+    width: 70%;
+    margin: 2rem auto;
+  }
+}
 
-    .box-top{
-        display:none;
-    }
+@media screen and (min-width: 850px) {
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .blue-box{
-        display:block;
-    }
-    .container{
-        display:flex;
-        gap: 1.8rem;
-        margin-left:1rem;
-        
-    }
+  .box-top {
+    display: none;
+  }
 
-    .grid-template{
-        margin-top: 10px;
+  .blue-box {
+    display: block;
+  }
+  .container {
+    display: flex;
+    gap: 1.8rem;
+    margin-left: 1rem;
+  }
 
-        
+  .grid-template {
+    margin-top: 10px;
 
-        grid-auto-rows: minmax(250px,auto);
+    grid-auto-rows: minmax(250px, auto);
+  }
 
-    }
-  
-
-    .box{
-        height:50.5px;
-    }
+  .box {
+    height: 50.5px;
+  }
 }
